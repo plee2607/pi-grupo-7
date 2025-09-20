@@ -1,0 +1,36 @@
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80px;
+    height: 80px;
+}
+
+.menuLateral{
+    width: 200px;
+    background-color: antiquewhite;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.menuLateral ul{
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menuLateral li{
+    margin: 7px 0;
+}
+
+.caTitulo{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.menuLateral a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    padding: 5px;
+}
