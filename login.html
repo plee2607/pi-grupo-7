@@ -6,21 +6,42 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
- <main class="login-container">
-    <form action="index.html" method="POST" class="login-form">
-      <h2>Iniciar sesión</h2>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="Introduce tu email" required>
-
-      <label for="password">Contraseña:</label>
-      <input type="password" id="password" name="password" placeholder="Introduce tu contraseña" required>
-
-      <button type="submit">Ingresar</button>
-
-      <p><a href="register.html">No tengo cuenta</a></p>
+  <header>
+    <a href="index.html"><img src="./img/logoSinFondo.png" alt="Logo KIVO" class="logo"></a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Registro</a></li>
+        </ul>
+    </nav>
+    <form action="./search-results.html" method="get">
+        <input type="text" name="query" placeholder="Buscar productos..." required>
+        <button type="submit">Buscar</button>
     </form>
-  </main>
+</header>
+
+<main class="login-container">
+  <form action="index.html" method="POST" class="login-form">
+    <h2>Iniciar sesión</h2>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Introduce tu email" required>
+
+    <label for="password">Contraseña:</label>
+    <input type="password" id="password" name="password" placeholder="Introduce tu contraseña" required>
+
+    <button type="submit">Ingresar</button>
+
+    <p><a href="register.html">No tengo cuenta</a></p>
+  </form>
+</main>
+<footer>
+  <p>Proyecto hecho por Benjamin Pagliaroli, Priscila Lee y Halley Moneta -- TDFE (Tecnologia de Desarrollo Front
+      End)</p>
+</footer>
+
 </body>
 </html>
