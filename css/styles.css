@@ -8,7 +8,6 @@
 .logo {
     width: 120px;
     height: 120px;
-    margin-left: 30px;
     padding: 0;
     margin-bottom: 0;
     margin-top: 0;
@@ -23,11 +22,12 @@ body {
 
 header {
     display: flex;
-    background-color: #E5F2D8;
+    background-color: #EFD8C5;
     color: white;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
+    text-transform:uppercase;
 }
 
 header a {
@@ -36,6 +36,7 @@ header a {
 
 header nav {
     order: 1;
+    width: 25%
 }
 
 header form {
@@ -50,7 +51,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 7.5px;
+    margin: 0 20px;
 }
 
 nav a {
@@ -58,12 +59,20 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 }
+header nav a:hover {
+  text-decoration: underline;
+}
 
+header form {
+  width: 25%;
+}
 
 .menuLateral {
     width: 200px;
-    background-color: rgb(255, 231, 250);
+    background-color: #a5a5a5ca;
     padding: 15px;
+    margin-top: 5px;
+    margin-left: 5px;
     border-radius: 10px;
 }
 
@@ -81,14 +90,18 @@ nav a {
 .caTitulo {
     font-size: 18px;
     margin-bottom: 10px;
-    color: rgb(79, 60, 222);
+    color: rgb(0, 0, 0);
 }
 
 .menuLateral a {
     text-decoration: none;
-    color: rgb(105, 67, 176);
+    color: rgb(0, 0, 0);
     font-size: 15px;
     padding: 5px;
+}
+.menuLateral a:hover {
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 .btn {
