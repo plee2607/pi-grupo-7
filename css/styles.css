@@ -67,8 +67,18 @@ header form {
   width: 25%;
 }
 
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #6b7a66;
+  width: 100%;
+}
+footer p{
+  text-align: center;
+}
+
 .menuLateral {
-    width: 200px;
+    width: 15%;
     background-color: #a5a5a5ca;
     padding: 15px;
     margin-top: 5px;
@@ -200,16 +210,11 @@ article img{
   text-decoration: underline;
 }
 
-footer{
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #6b7a66;
-}
-
 .productosdestacados{
   display: flex;
   flex-wrap: wrap;
-  width: 70%;
+  width: 75%;
+  
 }
 
 main{
@@ -229,9 +234,4 @@ main{
   padding: 10px;
   background: #fff;
   text-align: center;
-}
-
-aside {
-    width:  30%;
-    border-radius: 8px;
 }
