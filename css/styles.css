@@ -76,6 +76,12 @@ header form {
     border-radius: 10px;
 }
 
+.menuLateral h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #222;
+}
+
 .menuLateral ul {
     list-style-type: none;
     text-decoration: none;
@@ -113,8 +119,6 @@ header form {
 
 article{
     background-color: rgb(221, 195, 195);
-    display: flex;
-    flex-wrap: wrap;
 }
 
 article img{
@@ -194,4 +198,40 @@ article img{
 
 .login-form a:hover {
   text-decoration: underline;
+}
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #6b7a66;
+}
+
+.productosdestacados{
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+main{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 100%;
+}
+
+.titulos{
+  width: 100%;
+}
+
+.producto{
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  background: #fff;
+  text-align: center;
+}
+
+aside {
+    width:  30%;
+    border-radius: 8px;
 }
