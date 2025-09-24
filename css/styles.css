@@ -22,7 +22,7 @@ body {
 
 header {
     display: flex;
-    background-color: #EFD8C5;
+    background-color: #D9BFA9;
     color: white;
     align-items: center;
     justify-content: space-between;
@@ -69,27 +69,26 @@ header form {
 
 footer{
   display: flex;
-  flex-wrap: wrap;
-  background-color: #6b7a66;
+  justify-content: center;
+  background-color: #EFD8C5;
+  font-weight: bold;
+  color: black;
+  padding: 10px;
   width: 100%;
-}
-footer p{
-  text-align: center;
 }
 
 .menuLateral {
     width: 15%;
-    background-color: #a5a5a5ca;
+    background-color: #D9BFA9;
     padding: 15px;
-    margin-top: 5px;
     margin-left: 5px;
     border-radius: 10px;
 }
 
 .menuLateral h3 {
     margin-bottom: 15px;
-    font-size: 18px;
-    color: #222;
+    font-size: 22px;
+    color: black;
 }
 
 .menuLateral ul {
@@ -213,7 +212,8 @@ article img{
 .productosdestacados{
   display: flex;
   flex-wrap: wrap;
-  width: 75%;
+  width: 80%;
+  margin-left: 2.5%;
   
 }
 
@@ -222,16 +222,66 @@ main{
   flex-wrap: wrap;
   padding: 20px;
   width: 100%;
+  align-items: flex-start;  
 }
 
 .titulos{
   width: 100%;
+  margin-bottom: 1%;
+  background-color: #D9BFA9;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .producto{
+  display: flex;
+  flex-wrap: wrap;
+  width: 32%;
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 10px;
   background: #fff;
-  text-align: center;
+  margin: 0.5% 0.5% ;
 }
+.producto img {
+  width: 128px;  
+  height: 128px;
+  display: block;
+  margin: 0 auto 10px;
+}
+.producto h2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.producto p {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.producto .precio {
+  font-weight: bold;
+  text-align: center;
+  margin: 8px 0;
+  text-transform: uppercase;
+}
+.producto .btn {
+  width: 60%;
+  height: 12%;
+  display: flex;
+  justify-content: center;
+  margin: 0 20%;
+  background-color: #e8cdb5;
+  color: black;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.producto .btn:hover {
+  font-weight: bold;
+  background-color: #c0a893;
+}
+
