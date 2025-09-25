@@ -204,10 +204,9 @@ article img{
   color: #0e2b72;
   font-weight: bold;
 }
-
-.login-form a:hover {
-  text-decoration: underline;
-}
+ .login-container{
+  margin-left: 0;
+ }
 
 .productosdestacados{
   display: flex;
@@ -284,4 +283,31 @@ main{
   font-weight: bold;
   background-color: #c0a893;
 }
+
+/* Estilos para product.html */
+
+
+.imagenDetalle{
+  width: 500px;  
+  height: 500px;
+  display: block;
+  margin: 0 auto 10px;
+  margin-top: 0;
+}
+
+.detalle h1 {
+  display: flex;
+  margin-left: 60px;
+  margin-bottom: 0;
+}
+
+.detalle p{
+  margin-left: 60px;
+}
+
+.detalle{
+  margin-bottom: 100px;
+}
+
+
 
