@@ -224,7 +224,6 @@ article img {
   flex-wrap: wrap;
   width: 80%;
   margin-left: 2.5%;
-
 }
 
 main {
@@ -241,6 +240,7 @@ main {
   background-color: #D9BFA9;
   padding: 10px;
   border-radius: 10px;
+  margin-top: 10px;
 }
 
 .producto {
@@ -249,7 +249,7 @@ main {
   width: 32%;
   border: 1px solid #ddd;
   border-radius: 5px;
-  padding: 10px;
+  padding: 15px;
   background: #fff;
   margin: 0.5% 0.5%;
 }
