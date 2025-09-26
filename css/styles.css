@@ -308,8 +308,8 @@ main {
   width: 500px;
   height: 500px;
   display: block;
-  margin: 0 auto 10px;
-  margin-top: 0;
+  margin: 5px auto 10px;
+  margin-left: 25px;
 }
 
 .detalle h1 {
@@ -326,6 +326,7 @@ main {
   margin-bottom: 100px;
 }
 
+/*Mobile*/
 @media (max-width: 768px) {
 
   header {
@@ -340,17 +341,16 @@ main {
     display: block;
   }
 
-  /* ARREGLAR DE ACA! */
+  nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  }
 
-  header nav ul {
-    display: block;
-    align-items: center;
+  nav ul li {
+  margin: 0 20px;
   }
-  header nav ul li {
-    display: block;
-    margin: 10px 0;
-  }
-  /* HASTA ACA! */
 
   header form {
     width: 100%;
@@ -389,5 +389,49 @@ main {
     width: 100%;
     margin: 0;
   }
+
+  .producto{
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  .producto img{
+    width: 140px;
+    height: 140px;
+  }
+
+  .producto .btn{
+    width: 90%;
+    margin: 6px auto 0;
+    padding: 10px 12px;
+  }
+
+  .titulos{
+    padding: 8px;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .login-container{
+    width: 100%;
+    padding: 10px 0;
+    min-height: auto;
+    text-align: center;
+  }
+
+  .login-form{
+    width: 90%;
+    max-width: 400px;
+    margin: 16px auto;
+    padding: 20px;
+  }
+
+  .imagenDetalle{
+    max-width: 100%;
+    height: auto;
+  }
+
+  }
+
+
   
-}
