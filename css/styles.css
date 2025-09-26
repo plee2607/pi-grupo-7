@@ -152,8 +152,9 @@ article img {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   padding: 20px;
+  height: 100vh;
+  padding-left: 20%;
 }
 
 
