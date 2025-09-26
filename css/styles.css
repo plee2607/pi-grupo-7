@@ -324,6 +324,15 @@ main {
 
 .detalle {
   margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 25px;
+  background: #fff;
+  margin: 0 3%
+  
 }
 
 /*Mobile*/
@@ -346,6 +355,7 @@ main {
   display: flex;
   padding: 0;
   margin: 0;
+  margin-left: 25px;
   }
 
   nav ul li {
@@ -361,6 +371,7 @@ main {
   }
   header form button {
     padding: 6px 10px;
+    border-radius: 5px;
   }
 
   footer {
@@ -429,7 +440,19 @@ main {
   .imagenDetalle{
     max-width: 100%;
     height: auto;
+    margin-left: 0;
+    
   }
+
+  .detalle h1{
+    margin-left: 0;
+  }
+
+  .detalle p{
+    margin-left: 0;
+  }
+
+  
 
   }
 
