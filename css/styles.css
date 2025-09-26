@@ -325,3 +325,69 @@ main {
 .detalle {
   margin-bottom: 100px;
 }
+
+@media (max-width: 768px) {
+
+  header {
+    display: block;
+    text-align: center;
+    padding: 12px;
+  }
+  .logo {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 8px;
+    display: block;
+  }
+
+  /* ARREGLAR DE ACA! */
+
+  header nav ul {
+    display: block;
+    align-items: center;
+  }
+  header nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+  /* HASTA ACA! */
+
+  header form {
+    width: 100%;
+    margin-top: 10px;
+  }
+  header form input {
+    width: 70%;
+  }
+  header form button {
+    padding: 6px 10px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 12px;
+  }
+
+  main {
+    display: block;
+    padding: 10px;
+    }
+  .menuLateral {
+    width: 100%;
+    margin: 0 0 12px 0;
+    padding: 12px;
+  }
+  .menuLateral h3 { 
+    text-align: center; 
+  }
+  .menuLateral ul li { 
+    margin: 5px 0; 
+    text-align: center; 
+  }
+  
+  .productosdestacados {
+    width: 100%;
+    margin: 0;
+  }
+  
+}
