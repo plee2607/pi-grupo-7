@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,8 +18,8 @@
                 <li><a href="register.html">Registro</a></li>
             </ul>
         </nav>
-        <form action="./search-results.html" method="get">
-            <input type="text" name="query" placeholder="Buscar productos..." required>
+        <form action="./resultadosDeBusqueda.html" method="get">
+            <input type="text" name="query" placeholder="Buscar productos...">
             <button type="submit">Buscar</button>
         </form>
     </header>
@@ -52,31 +53,34 @@
                 <li> <a href="./category.html">Womens watches</a> </li>
             </ul>
         </aside>
-<section class="login-container">
-  <form action="index.html" method="get" class="login-form">
-    <h2>Resgístrate</h2>
+        <section class="login-container">
+            <form action="index.html" method="get" class="login-form">
+                <h2>Resgístrate</h2>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" placeholder="Introduce tu email" required>
+                <label class="log_label" for="email">Email:</label>
+                <input  class="input_form" type="email" name="email" placeholder="Introduce un email">
 
-    <label for="password">Contraseña:</label>
-    <input type="password" id="password" name="password" placeholder="Introduce tu contraseña" required>
+                <label class="log_label" for="password">Contraseña:</label>
+                <input class="input_form"  type="password" name="password" placeholder="Introduce una contraseña">
 
-    <label for="password">Repetir contraseña:</label>
-    <input type="password" id="password" name="repeat password" placeholder="Repite la contraseña">
+                <label class="log_label" for="password">Repetir contraseña:</label>
+                <input class="input_form" type="password"  name="repeat password" placeholder="Repite la contraseña">
 
-    <label for="terminos">Acepto términos y condiciones</label>
-    <input type="checkbox" name="terminos_y_condiciones" id="terminos">
-    
+                <div class="checkbox">
+                    <label class="terminos" for="terminos">Acepto términos y condiciones</label>
+                    <input type="checkbox" name="terminos_y_condiciones" value="terminos_y_condiciones">
+                </div>
 
-    <button type="submit">Registrarme</button>
+                <button type="submit">Registrarme</button>
 
-    <p><a href="login.html">Ya tengo cuenta</a></p>
-  </form>
-  </section>
+                <p><a href="login.html">Ya tengo cuenta</a></p>
+            </form>
+        </section>
     </main>
     <footer>
-        <p>Proyecto hecho por Benjamin Pagliaroli, Priscila Lee y Halley Moneta -- TDFE (Tecnologia de Desarrollo Front End)</p>
+        <p>Proyecto hecho por Benjamin Pagliaroli, Priscila Lee y Halley Moneta -- TDFE (Tecnologia de Desarrollo Front
+            End)</p>
     </footer>
 </body>
+
 </html>

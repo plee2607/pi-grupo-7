@@ -43,11 +43,12 @@ header form {
   order: 3;
 }
 
-header form input{
+header form input {
   border-radius: 2%;
   border: none;
 }
-header form button{
+
+header form button {
   border: #333;
   border-radius: 3px;
 }
@@ -144,11 +145,19 @@ article {
 article img {
   width: 50px;
   height: 50px;
+}
 
+.errorBusqueda {
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 300px;
+  margin-left: 23%;
+  color: #555;
 }
 
 
-/* Estilo para login.html */
+/* Estilos para los campos de formulario */
+
 .login-container {
   display: flex;
   justify-content: center;
@@ -159,8 +168,10 @@ article img {
   width: 80%;
 }
 
-
 .login-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   background-color: white;
   padding: 30px;
   border-radius: 8px;
@@ -168,24 +179,40 @@ article img {
   width: 100%;
   max-width: 400px;
   text-align: center;
-
 }
 
 .login-form h2 {
+  flex-direction: column;
   margin-bottom: 20px;
   font-size: 24px;
   color: #333;
 }
 
-/* Estilos para los campos de formulario */
-.login-form label {
+.log_label {
   font-size: 16px;
   margin-bottom: 8px;
-  display: block;
   color: #555;
+  text-align: start;
 }
 
-.login-form input {
+.checkbox {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 1%;
+  justify-content: center;
+}
+
+.checkbox input {
+  margin-left: 10px;
+}
+
+.terminos {
+  color: rgb(190, 188, 188);
+  margin: 0;
+}
+
+.input_form {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -221,7 +248,10 @@ article img {
 
 .login-container {
   margin-left: 0;
+  padding-left: 0%;
 }
+
+/*estilo para los productos*/
 
 .productosdestacados {
   display: flex;
@@ -303,9 +333,8 @@ main {
   font-weight: bold;
   background-color: #c0a893;
 }
+
 /* Estilos para product.html */
-
-
 .imagenDetalle {
   width: 500px;
   height: 500px;
@@ -334,7 +363,6 @@ main {
   padding: 25px;
   background: #fff;
   margin: 0 3%
-  
 }
 
 /*Mobile*/
@@ -345,6 +373,7 @@ main {
     text-align: center;
     padding: 12px;
   }
+
   .logo {
     width: 90px;
     height: 90px;
@@ -353,24 +382,26 @@ main {
   }
 
   nav ul {
-  list-style: none;
-  display: flex;
-  padding: 0;
-  margin: 0;
-  margin-left: 25px;
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-left: 25px;
   }
 
   nav ul li {
-  margin: 0 20px;
+    margin: 0 20px;
   }
 
   header form {
     width: 100%;
     margin-top: 10px;
   }
+
   header form input {
     width: 70%;
   }
+
   header form button {
     padding: 6px 10px;
     border-radius: 5px;
@@ -384,79 +415,80 @@ main {
   main {
     display: block;
     padding: 10px;
-    }
+  }
+
   .menuLateral {
     width: 100%;
     margin: 0 0 12px 0;
     padding: 12px;
   }
-  .menuLateral h3 { 
-    text-align: center; 
+
+  .menuLateral h3 {
+    text-align: center;
   }
-  .menuLateral ul li { 
-    margin: 5px 0; 
-    text-align: center; 
+
+  .menuLateral ul li {
+    margin: 5px 0;
+    text-align: center;
   }
-  
+
   .productosdestacados {
     width: 100%;
     margin: 0;
   }
 
-  .producto{
+  .producto {
     width: 100%;
     margin: 8px 0;
   }
 
-  .producto img{
+  .producto img {
     width: 140px;
     height: 140px;
   }
 
-  .producto .btn{
+  .producto .btn {
     width: 90%;
     margin: 6px auto 0;
     padding: 10px 12px;
   }
 
-  .titulos{
+  .titulos {
     padding: 8px;
     margin: 10px 0;
     text-align: center;
   }
 
-  .login-container{
+  .login-container {
     width: 100%;
     padding: 10px 0;
     min-height: auto;
     text-align: center;
   }
 
-  .login-form{
+  .login-form {
     width: 90%;
     max-width: 400px;
     margin: 16px auto;
     padding: 20px;
   }
 
-  .imagenDetalle{
+  .imagenDetalle {
     max-width: 100%;
     height: auto;
     margin-left: 0;
-    
+
   }
 
-  .detalle h1{
+  .detalle h1 {
     margin-left: 0;
   }
 
-  .detalle p{
+  .detalle p {
     margin-left: 0;
   }
 
-  
-
+  .errorBusqueda{
+    margin-left: 10%;
   }
-
-
-  
+}
