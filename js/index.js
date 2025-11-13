@@ -1,17 +1,20 @@
-// TRAER SECCIÓN CELULARES
-fetch("https://dummyjson.com/products/category/smartphones")
+// Traer seccion smartphones
+let URL = "https://dummyjson.com/products/category/smartphones"
+
+let seccion = document.querySelector(".productos-container")
+
+fetch(URL)
 .then(function(response) {
     return response.json()
 })
 .then(function(data) {
-    let contenedorCelulares = document.querySelector(".contenedor-celulares")
+    
     let contenido = ""
-
     for (let i = 0; i < 10; i++) {
         let producto = data.products[i]
         contenido = contenido + `
             <article class="card">
-                <img src="${producto.thumbnail}" alt="${producto.title}">
+                <img src="${producto.images[0]}" alt="${producto.title}">
                 <p><strong>${producto.title}</strong></p>
                 <p>${producto.description}</p>
                 <p>Precio: $${producto.price}</p>
@@ -19,38 +22,36 @@ fetch("https://dummyjson.com/products/category/smartphones")
             </article>
         `
     }
-
-    contenedorCelulares.innerHTML = contenido
+    seccion.innerHTML = contenido
 })
 .catch(function(error) {
     console.log("Error: " + error)
 })
 
+// SEGUNDA SECCIÓN — Perfumes (fragrances)
+let URL2 = "https://dummyjson.com/products/category/fragrances"
+let seccion2 = document.querySelector(".contenedor-perfumes")
 
-// TRAER SECCIÓN PERFUMES
-fetch("https://dummyjson.com/products/category/fragrances")
-.then(function(response) {
+fetch(URL2)
+  .then(function(response) {
     return response.json()
-})
-.then(function(data) {
-    let contenedorPerfumes = document.querySelector(".contenedor-perfumes")
+  })
+  .then(function(data) {
     let contenido = ""
-
     for (let i = 0; i < 10; i++) {
-        let producto = data.products[i]
-        contenido = contenido + `
-            <article class="card">
-                <img src="${producto.thumbnail}" alt="${producto.title}">
-                <p><strong>${producto.title}</strong></p>
-                <p>${producto.description}</p>
-                <p>Precio: $${producto.price}</p>
-                <a href="detalle.html?id=${producto.id}" class="boton">Ver detalle</a>
-            </article>
-        `
+      let producto = data.products[i]
+      contenido = contenido + `
+        <article class="card">
+          <img src="${producto.images[0]}" alt="${producto.title}">
+          <p><strong>${producto.title}</strong></p>
+          <p>${producto.description}</p>
+          <p>Precio: $${producto.price}</p>
+          <a href="detalle.html?id=${producto.id}" class="boton">Ver detalle</a>
+        </article>
+      `
     }
-
-    contenedorPerfumes.innerHTML = contenido
-})
-.catch(function(error) {
+    seccion2.innerHTML = contenido
+  })
+  .catch(function(error) {
     console.log("Error: " + error)
-})
+  })
