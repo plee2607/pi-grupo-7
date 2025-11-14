@@ -1,3 +1,4 @@
+// Lista de categorías
 fetch('https://dummyjson.com/products/category-list')
   .then(function(response){
     return response.json();
@@ -55,14 +56,16 @@ fetch(URL)
 })
 
 // SEGUNDA SECCIÓN — Perfumes (fragrances)
-let URL2 = "https://dummyjson.com/products/category/fragrances"
+let URL2 = "https://dummyjson.com/products/category/groceries"
 let seccion2 = document.querySelector(".contenedor-perfumes")
 
 fetch(URL2)
-  .then(function(response) {
+  .then(function (response) {
     return response.json()
   })
-  .then(function(data) {
+  .then(function (data) {
+    console.log(data);
+
     let contenido = ""
     for (let i = 0; i < 10; i++) {
       let producto = data.products[i]
@@ -78,6 +81,6 @@ fetch(URL2)
     }
     seccion2.innerHTML = contenido
   })
-  .catch(function(error) {
+  .catch(function (error) {
     console.log("Error: " + error)
   })
