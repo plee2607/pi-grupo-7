@@ -55,9 +55,9 @@ fetch(URL)
     console.log("Error: " + error)
 })
 
-// SEGUNDA SECCIÓN — Perfumes (fragrances)
+// SEGUNDA SECCIÓN — Grocieries
 let URL2 = "https://dummyjson.com/products/category/groceries"
-let seccion2 = document.querySelector(".contenedor-perfumes")
+let seccion2 = document.querySelector(".contenedor-groceries")
 
 fetch(URL2)
   .then(function (response) {
