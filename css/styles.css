@@ -1,67 +1,36 @@
 * {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+}
+
+body {
+  background: #f9f9f9e9;
+  color: #333;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #D9BFA9;
+  padding: 10px 20px;
+  text-transform: uppercase;
 }
 
 .logo {
   width: 120px;
   height: 120px;
-  padding: 0;
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f9f9f9e9;
-}
-
-header {
-  display: flex;
-  background-color: #D9BFA9;
-  color: white;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  text-transform: uppercase;
-}
-
-header a {
-  order: 2;
-}
-
-header nav {
-  order: 1;
-  width: 25%
-}
-
-header form {
-  order: 3;
-}
-
-header form input {
-  border-radius: 2%;
-  border: none;
-}
-
-header form button {
-  border: #333;
-  border-radius: 3px;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  padding: 0;
-  margin: 0;
 }
 
 nav ul li {
-  margin: 0 20px;
+  margin-right: 20px;
 }
 
 nav a {
@@ -70,12 +39,32 @@ nav a {
   font-weight: bold;
 }
 
-header nav a:hover {
+nav a:hover {
   text-decoration: underline;
 }
 
 header form {
   width: 25%;
+  display: flex;
+}
+
+header form input {
+  flex: 1;
+  border-radius: 4px;
+  border: none;
+  padding: 6px;
+}
+
+header form button {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: solid 1px #333;
+  background: #fff;
+  cursor: pointer;
+}
+
+header form button:hover {
+  background: #ddd;
 }
 
 footer {
@@ -83,47 +72,34 @@ footer {
   justify-content: center;
   background-color: #EFD8C5;
   font-weight: bold;
-  color: black;
-  padding: 10px;
-  width: 100%;
+  padding: 12px;
+  margin-top: 40px;
 }
 
 .menuLateral {
   width: 15%;
   background-color: #D9BFA9;
   padding: 15px;
-  margin-left: 5px;
   border-radius: 10px;
+  margin-right: 20px;
 }
 
 .menuLateral h3 {
-  margin-bottom: 15px;
   font-size: 22px;
-  color: black;
+  margin-bottom: 10px;
 }
 
 .menuLateral ul {
-  list-style-type: none;
-  text-decoration: none;
-  padding: 0;
-  margin: 0;
+  list-style: none;
 }
 
 .menuLateral li {
-  margin: 7px 0;
-}
-
-.caTitulo {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: rgb(0, 0, 0);
+  margin: 6px 0;
 }
 
 .menuLateral a {
+  color: black;
   text-decoration: none;
-  color: rgb(0, 0, 0);
-  font-size: 15px;
-  padding: 5px;
 }
 
 .menuLateral a:hover {
@@ -131,360 +107,54 @@ footer {
   font-weight: bold;
 }
 
-.btn {
-  padding: 10px;
-  background-color: rgb(98, 86, 179);
-  color: white;
-  text-decoration: none;
-}
-
-article {
-  background-color: rgb(221, 195, 195);
-}
-
-article img {
-  width: 50px;
-  height: 50px;
-}
-
-.errorBusqueda {
-  align-items: center;
-  margin-top: 15px;
-  margin-bottom: 300px;
-  margin-left: 23%;
-  color: #555;
-}
-
-
-
-.login-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  height: 100vh;
-  padding-left: 20%;
-  width: 80%;
-}
-
-.login-form {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  background-color: white;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 400px;
-  text-align: center;
-}
-
-.login-form h2 {
-  flex-direction: column;
-  margin-bottom: 20px;
-  font-size: 24px;
-  color: #333;
-}
-
-.log_label {
-  font-size: 16px;
-  margin-bottom: 8px;
-  color: #555;
-  text-align: start;
-}
-
-.checkbox {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  margin-bottom: 1%;
-  justify-content: center;
-}
-
-.checkbox input {
-  margin-left: 10px;
-}
-
-.terminos {
-  color: rgb(190, 188, 188);
-  margin: 0;
-}
-
-.input_form {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border-radius: 4px;
-  border: 1px solid #ddd;
-  font-size: 16px;
-}
-
-.login-form button {
-  width: 100%;
-  padding: 10px;
-  background-color: #7D8C82;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-.login-form button:hover {
-  background-color: #6b7a66;
-}
-
-.login-form p {
-  margin-top: 10px;
-}
-
-.login-form a {
-  text-decoration: none;
-  color: #0e2b72;
-  font-weight: bold;
-}
-
-.login-container {
-  margin-left: 0;
-  padding-left: 0%;
-}
-
-
-.productosdestacados {
-  display: flex;
-  flex-wrap: wrap;
-  width: 80%;
-  margin-left: 2.5%;
-}
-
 main {
   display: flex;
-  flex-wrap: wrap;
   padding: 20px;
-  width: 100%;
-  align-items: flex-start;
 }
 
 .titulos {
   width: 100%;
-  margin-bottom: 1%;
+  margin-bottom: 15px;
   background-color: #D9BFA9;
   padding: 10px;
   border-radius: 10px;
-  margin-top: 10px;
 }
 
-.producto {
+.productos-container,
+.contenedor-groceries {
   display: flex;
   flex-wrap: wrap;
-  width: 32%;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 15px;
-  background: #fff;
-  margin: 0.5% 0.5%;
 }
 
-.producto img {
-  width: 128px;
-  height: 128px;
-  display: block;
-  margin: 0 auto 10px;
-}
-
-.producto h2 {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.producto p {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  width: 100%;
-  margin-bottom: 5px;
-}
-
-.producto .precio {
-  font-weight: bold;
-  text-align: center;
-  margin: 8px 0;
-  text-transform: uppercase;
-}
-
-.producto .btn {
-  width: 60%;
-  height: 12%;
-  display: flex;
-  justify-content: center;
-  margin: 0 20%;
-  background-color: #e8cdb5;
-  color: black;
-  padding: 8px 12px;
+.producto,
+.card {
+  width: 31%;
+  background: white;
   border-radius: 8px;
-  text-decoration: none;
-}
-
-.producto .btn:hover {
-  font-weight: bold;
-  background-color: #c0a893;
-}
-
-.imagenDetalle {
-  width: 500px;
-  height: 500px;
-  display: block;
-  margin: 5px auto 10px;
-  margin-left: 25px;
-}
-
-.detalle h1 {
-  display: flex;
-  margin-left: 60px;
-  margin-bottom: 0;
-}
-
-.detalle p {
-  margin-left: 60px;
-}
-
-.detalle {
-  margin-bottom: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
   border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 25px;
-  background: #fff;
-  margin: 0 3%
+  padding: 15px;
+  margin: 1%;
+  transition: 0.2s;
 }
 
-@media (max-width: 768px) {
+.producto:hover,
+.card:hover {
+  transform: scale(1.02);
+}
 
-  header {
-    display: block;
-    text-align: center;
-    padding: 12px;
-  }
+.producto img,
+.card img {
+  width: 100%;
+  max-height: 200px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 10px;
+}
 
-  .logo {
-    width: 90px;
-    height: 90px;
-    margin: 0 auto 8px;
-    display: block;
-  }
-
-  nav ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-    margin-left: 25px;
-  }
-
-  nav ul li {
-    margin: 0 20px;
-  }
-
-  header form {
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  header form input {
-    width: 70%;
-  }
-
-  header form button {
-    padding: 6px 10px;
-    border-radius: 5px;
-  }
-
-  footer {
-    text-align: center;
-    padding: 12px;
-  }
-
-  main {
-    display: block;
-    padding: 10px;
-  }
-
-  .menuLateral {
-    width: 100%;
-    margin: 0 0 12px 0;
-    padding: 12px;
-  }
-
-  .menuLateral h3 {
-    text-align: center;
-  }
-
-  .menuLateral ul li {
-    margin: 5px 0;
-    text-align: center;
-  }
-
-  .productosdestacados {
-    width: 100%;
-    margin: 0;
-  }
-
-  .producto {
-    width: 100%;
-    margin: 8px 0;
-  }
-
-  .producto img {
-    width: 140px;
-    height: 140px;
-  }
-
-  .producto .btn {
-    width: 90%;
-    margin: 6px auto 0;
-    padding: 10px 12px;
-  }
-
-  .titulos {
-    padding: 8px;
-    margin: 10px 0;
-    text-align: center;
-  }
-
-  .login-container {
-    width: 100%;
-    padding: 10px 0;
-    min-height: auto;
-    text-align: center;
-  }
-
-  .login-form {
-    width: 90%;
-    max-width: 400px;
-    margin: 16px auto;
-    padding: 20px;
-  }
-
-  .imagenDetalle {
-    max-width: 100%;
-    height: auto;
-    margin-left: 0;
-
-  }
-
-  .detalle h1 {
-    margin-left: 0;
-  }
-
-  .detalle p {
-    margin-left: 0;
-  }
-
-  .errorBusqueda{
-    margin-left: 10%;
-  }
+.producto p,
+.card p {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 8px;
 }

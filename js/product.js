@@ -82,14 +82,14 @@ fetch(url)
 
       let review = data.reviews[i];
 
-      reviewsHTML = reviewsHTML + `
-        <article class="producto">
-          <h2>${review.reviewerName}</h2>
-          <p>${review.date}</p>
-          <p>${review.comment}</p>
-          <p><strong>${review.rating} estrellas</strong></p>
-        </article>
-      `;
+    reviewsHTML = reviewsHTML + `
+      <article class="review-card">
+        <h4>${review.reviewerName}</h4>
+        <p>${review.date}</p>
+        <p>${review.comment}</p>
+        <p><strong>${review.rating} estrellas</strong></p>
+      </article>
+    `;
     }
 
     seccionReviews.innerHTML = reviewsHTML;
