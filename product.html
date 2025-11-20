@@ -28,53 +28,45 @@
 
         <aside class="menuLateral">
             <h3 class="caTitulo">Categorias</h3>
-            <ul id = "MenuLateral">
-                
+            <ul id="MenuLateral">
+
             </ul>
         </aside>
 
         <section class="detalle">
-            <h1>Macbook Air</h1>
-            <img class="imagenDetalle" src="./img/macbookair.jpg" alt="">
-            <p><strong>Marca:</strong> Apple</p>
+            <h1 class="titulo-detalle">
+
+            </h1>
+            <img class="imagenDetalle" src=" " alt=" ">
+
+            <p><strong>Marca:</strong> <span class="marca">
+                </span></p>
             <br>
-            <p><strong>Descripción:</strong> Laptop portatil con procesador M1 256GB</p>
+            <p><strong>Descripción:</strong> <span class="descripcion">
+                </span></p>
             <br>
-            <p><strong>Precio:</strong> $999.999ars</p>
+            <p><strong>Precio:</strong> $<span class="precioProducto">
+                </span></p>
             <br>
-            <p><strong>Categoria:</strong> Laptops</p>
+            <p><strong>Categoria:</strong>
+                <a id="categoriaProducto" href=""> </a>
+            </p>
             <br>
-            <p><strong>Stock:</strong> 12 unidades</p>
+
+            <p><strong>Stock:</strong> <span id="stockProducto"></span> unidades </p>
             <br>
-            <p><strong>Tags:</strong> laptop, diseño, estudiante</p>
+            <p><strong>Tags:</strong> </p>
+            <ul id="tagsProducto"> </ul>
         </section>
 
-
-
-         <section class="productosdestacados">
-
+        <!-- section de reviews -->
+        <section class="productosdestacados">
             <article class="titulos">
                 <h2>Opiniones:</h2>
             </article>
 
-            <article class="producto">
-                <h2>Sofia Lopez</h2> 
-                <p>26/06/2025</p>
-                <p>Me encanto la caliad y es super liviana, realmente perfecto para estudiantes!</p>
-                <p><strong> 5 estrellas </strong></p>
-            </article>
-            <article class="producto">
-                <h2> Felipe Gonzalez</h2>
-                <p> 02/02/2023 </p>
-                <p>Me llegó en perfecto estado, pero <br> la bateria no tiene mucha durabilidad <br>deberia de estar aclarado en la descripcion</p>
-                <p> <strong> 3 estrellas </strong></p>
-            </article>
-            <article class="producto"> 
-                <h2> Marta Rodriguez </h2>
-                <p> 16/09/2025 </p>
-                <p> Un desastre. Tardaron dos semanas más en traermelo y aparte en otro color del que pedí.</p>
-                <p> <strong> 1 estrella </strong></p>
-            </article>      
+            <div id="reviews-container"></div>
+        </section>
     </main>
 
     <footer>
@@ -83,7 +75,7 @@
     </footer>
 
     <script src="./js/header.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="./js/product.js"></script>
 </body>
 
 </html>

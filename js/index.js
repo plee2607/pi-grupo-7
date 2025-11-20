@@ -45,7 +45,7 @@ fetch(URL)
                 <p><strong>${producto.title}</strong></p>
                 <p>${producto.description}</p>
                 <p>Precio: $${producto.price}</p>
-                <a href="detalle.html?id=${producto.id}" class="boton">Ver detalle</a>
+                <a href="product.html?id=${producto.id}" class="boton">Ver detalle</a>
             </article>
         `
     }
@@ -75,7 +75,7 @@ fetch(URL2)
           <p><strong>${producto.title}</strong></p>
           <p>${producto.description}</p>
           <p>Precio: $${producto.price}</p>
-          <a href="detalle.html?id=${producto.id}" class="boton">Ver detalle</a>
+          <a href="product.html?id=${producto.id}" class="boton">Ver detalle</a>
         </article>
       `
     }
