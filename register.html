@@ -30,21 +30,21 @@
             </ul>
         </aside>
         <section class="login-container">
-            <form action="login.html" method="get" class="login-form">
+            <form id="formRegister" action="login.html" method="get" class="login-form">
                 <h2>Resgístrate</h2>
 
                 <label class="log_label" for="email">Email:</label>
-                <input  class="input_form" type="email" name="email" placeholder="Introduce un email">
+                <input id="email" class="input_form" type="email" name="email" placeholder="Introduce un email">
 
                 <label class="log_label" for="password">Contraseña:</label>
-                <input class="input_form"  type="password" name="password" placeholder="Introduce una contraseña">
+                <input id="password" class="input_form" type="password" name="password" placeholder="Introduce una contraseña">
 
                 <label class="log_label" for="password">Repetir contraseña:</label>
-                <input class="input_form" type="password"  name="repeat password" placeholder="Repite la contraseña">
+                <input id="password2" class="input_form" type="password" name="repeat_password" placeholder="Repite la contraseña">
 
                 <div class="checkbox">
                     <label class="terminos" for="terminos">Acepto términos y condiciones</label>
-                    <input type="checkbox" name="terminos_y_condiciones" value="terminos_y_condiciones">
+                    <input id="tyc" type="checkbox" name="terminos_y_condiciones" value="terminos_y_condiciones">
                 </div>
 
                 <button type="submit">Registrarme</button>
@@ -61,6 +61,7 @@
     <script src="./js/header.js"></script>
     <script src="./js/saludo.js"></script>
     <script src="./js/logout.js"></script>
+    <script src="./js/register.js"></script>
     <script src="./js/listaCategorias.js"></script>
 </body>
 
