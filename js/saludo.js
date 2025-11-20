@@ -11,6 +11,7 @@ if (emailGuardado != null) {
     let linkLogout = document.createElement("a");
     linkLogout.innerText = "Logout";
     linkLogout.href = "#";
+    linkLogout.id = "logoutLink"; 
     liLogout.appendChild(linkLogout);
 
     nav.appendChild(liBienvenida);
@@ -18,11 +19,12 @@ if (emailGuardado != null) {
 
     let linkLogin = document.querySelector("a[href='login.html']");
     let linkRegistro = document.querySelector("a[href='register.html']");
-    linkLogin.style.display = "none";
-    linkRegistro.style.display = "none";
 
-    linkLogout.addEventListener("click", function () {
-        localStorage.removeItem("emailUsuario");
-        location.reload();
-    });
+    if (linkLogin != null) {
+        linkLogin.style.display = "none";
+    }
+
+    if (linkRegistro != null) {
+        linkRegistro.style.display = "none";
+    }
 }
