@@ -37,10 +37,8 @@ let categoriaLink = document.querySelector("#categoriaProducto");
 let stock = document.querySelector("#stockProducto");
 let tagsLista = document.querySelector("#tagsProducto");
 
-// Contenedor de reviews
 let seccionReviews = document.querySelector(".productosdestacados");
 
-// Llamar a la API del producto
 let url = "https://dummyjson.com/products/" + productId;
 
 fetch(url)
@@ -51,7 +49,6 @@ fetch(url)
 
     console.log(data);
 
-    // Insertar datos del producto en el HTML
     titulo.innerText = data.title;
     imagen.src = data.images[0];
     marca.innerText = data.brand;
@@ -59,11 +56,9 @@ fetch(url)
     precio.innerText = data.price;
     stock.innerText = data.stock;
 
-    // Categoría como link
     categoriaLink.innerText = data.category;
     categoriaLink.href = "category.html?cat=" + data.category;
 
-    // TAGS (hasta tres)
     let contenidoTags = "";
     let limite = 3;
 
@@ -76,9 +71,6 @@ fetch(url)
     }
 
     tagsLista.innerHTML = contenidoTags;
-
-    // renderizar reviews
-    // Cada review tiene: rating, comentario, fecha y review name
 
     let reviewsHTML = `
       <article class="titulos">

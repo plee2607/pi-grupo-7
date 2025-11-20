@@ -156,7 +156,6 @@ article img {
 }
 
 
-/* Estilos para los campos de formulario */
 
 .login-container {
   display: flex;
@@ -251,7 +250,6 @@ article img {
   padding-left: 0%;
 }
 
-/*estilo para los productos*/
 
 .productosdestacados {
   display: flex;
@@ -334,7 +332,6 @@ main {
   background-color: #c0a893;
 }
 
-/* Estilos para product.html */
 .imagenDetalle {
   width: 500px;
   height: 500px;
@@ -365,7 +362,6 @@ main {
   margin: 0 3%
 }
 
-/*Mobile*/
 @media (max-width: 768px) {
 
   header {

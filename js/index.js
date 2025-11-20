@@ -1,4 +1,3 @@
-// Traer seccion smartphones
 let URL = "https://dummyjson.com/products/category/smartphones"
 
 let seccion = document.querySelector(".productos-container")
@@ -28,7 +27,6 @@ fetch(URL)
     console.log("Error: " + error)
 })
 
-// SEGUNDA SECCIÓN — Grocieries
 let URL2 = "https://dummyjson.com/products/category/groceries"
 let seccion2 = document.querySelector(".contenedor-groceries")
 
