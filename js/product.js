@@ -1,3 +1,29 @@
+fetch('https://dummyjson.com/products/category-list')
+  .then(function(response){
+    return response.json();
+  })
+  .then(function(data){
+    console.log(data); 
+
+    let lista = document.querySelector('#MenuLateral');
+    
+    if(!lista) return;
+
+    data.forEach(function(categoria){
+      lista.innerHTML += `
+        <li>
+          <a href="./category.html?categoria=${categoria}">
+            ${categoria}
+          </a>
+        </li>
+      `;
+    });
+
+  })
+  .catch(function(error){
+    console.log('El error es: ' + error);
+  });
+  
 let qs = location.search; 
 let qsObj = new URLSearchParams(qs); 
 let productId = qsObj.get("id");
@@ -25,7 +51,7 @@ fetch(url)
 
     console.log(data);
 
-    // 4) Insertar datos del producto en el HTML
+    // Insertar datos del producto en el HTML
     titulo.innerText = data.title;
     imagen.src = data.images[0];
     marca.innerText = data.brand;
@@ -37,7 +63,7 @@ fetch(url)
     categoriaLink.innerText = data.category;
     categoriaLink.href = "category.html?cat=" + data.category;
 
-    // TAGS (hasta 3)
+    // TAGS (hasta tres)
     let contenidoTags = "";
     let limite = 3;
 
@@ -52,7 +78,7 @@ fetch(url)
     tagsLista.innerHTML = contenidoTags;
 
     // renderizar reviews
-    // Cada review tiene: rating, comment, date, reviewerName
+    // Cada review tiene: rating, comentario, fecha y review name
 
     let reviewsHTML = `
       <article class="titulos">
