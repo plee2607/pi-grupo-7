@@ -1,6 +1,6 @@
 let formulario = document.querySelector(".login-form");
-let campoEmail = document.querySelector("input[name='email']");
-let campoPassword = document.querySelector("input[name='password']");
+let campoEmail = document.querySelector("#email");
+let campoPassword = document.querySelector("#password");
 
 formulario.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -21,6 +21,5 @@ formulario.addEventListener("submit", function (event) {
     }
 
     localStorage.setItem("emailUsuario", campoEmail.value);
-
-    location.href = "index.html";
+    formulario.submit();
 });

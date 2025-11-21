@@ -28,8 +28,7 @@ fetch(url)
     precio.innerText = data.price;
     stock.innerText = data.stock;
 
-    categoriaLink.innerText = data.category;
-    categoriaLink.href = "category.html?categoria=" + data.category;
+    categoriaLink.innerHTML = '<a href="category.html?categoria=' + data.category + '">' + data.category + '</a>';
 
     let contenidoTags = "";
     let limite = 3;

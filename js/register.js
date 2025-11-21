@@ -32,5 +32,5 @@ formRegister.addEventListener("submit", function(event) {
         return;
     }
 
-    location.href = "login.html";
+    formRegister.submit();
 });
