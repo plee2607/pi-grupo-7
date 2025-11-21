@@ -3,11 +3,14 @@ fetch('https://dummyjson.com/products/category-list')
     return response.json();
   })
   .then(function(data){
-    console.log(data); 
 
     let lista = document.querySelector('#MenuLateral');
+    if (lista == null) {
+      return;
+    }
 
-    data.forEach(function(categoria){
+    for(let i = 0; i < data.length; i++) {
+      let categoria = data[i];
       lista.innerHTML += `
         <li>
           <a href="./category.html?categoria=${categoria}">
@@ -15,7 +18,7 @@ fetch('https://dummyjson.com/products/category-list')
           </a>
         </li>
       `;
-    });
+    }
 
   })
   .catch(function(error){

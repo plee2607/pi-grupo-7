@@ -37,8 +37,6 @@ fetch(URL2)
     return response.json()
   })
   .then(function (data) {
-    console.log(data);
-
     let contenido = ""
     for (let i = 0; i < 10; i++) {
       let producto = data.products[i]

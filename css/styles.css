@@ -69,19 +69,19 @@ header form {
 }
 
 header form input {
-  width: 220px;               
-  border-radius: 999px;        
+  width: 220px;
+  border-radius: 999px;
   border: 1px solid #7B6048;
   padding: 8px 14px;
   margin-right: 8px;
   font-size: 14px;
   background-color: #fff;
-  box-shadow: 0 0 4px rgba(0,0,0,0.08);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
 }
 
 header form button {
   padding: 8px 16px;
-  border-radius: 999px;        
+  border-radius: 999px;
   border: none;
   background-color: #7B6048;
   color: #fff;
@@ -91,7 +91,7 @@ header form button {
 }
 
 header form button:hover {
-  background-color: #6A523D; 
+  background-color: #6A523D;
 }
 
 footer {
@@ -109,8 +109,8 @@ footer {
   padding: 15px;
   border-radius: 10px;
   margin-right: 20px;
-  height: auto;          
-  align-self: flex-start; 
+  height: auto;
+  align-self: flex-start;
 }
 
 .menuLateral h3 {
@@ -140,7 +140,7 @@ main {
   display: flex;
   padding: 20px;
   flex: 1;
-  align-items: flex-start; 
+  align-items: flex-start;
 }
 
 .titulos {
@@ -165,9 +165,8 @@ main {
   border: 1px solid #ddd;
   padding: 15px;
   margin: 1%;
-  transition: 0.2s;
-  display: flex;           
-  flex-direction: column;    
+  display: flex;
+  flex-direction: column;
 }
 
 .card {
@@ -176,11 +175,11 @@ main {
 
 .producto img,
 .card img {
-  display: block;     
-  margin: 0 auto;      
-  max-width: 100%;   
-  height: auto;       
-  max-height: 250px; 
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 250px;
   border-radius: 6px;
   margin-bottom: 10px;
   background-color: white;
@@ -227,7 +226,7 @@ p.precioCard {
 }
 
 .card-footer {
-  margin-top: auto;          
+  margin-top: auto;
 }
 
 p.tituloCard {
@@ -236,6 +235,7 @@ p.tituloCard {
   margin-bottom: 10px;
   color: #333;
 }
+
 .detalle {
   flex: 1;
   background: #fff;
@@ -253,6 +253,12 @@ p.tituloCard {
   border-radius: 12px;
   max-width: 90%;
   font-size: 32px;
+}
+
+.detalle p {
+  max-width: 90%;
+  margin: 10px auto;
+  line-height: 1.5;
 }
 
 .detalle-info-text {
@@ -282,13 +288,15 @@ p.tituloCard {
 }
 
 #tagsProducto {
-  margin-top: 10px;
-  padding-left: 20px;
+  max-width: 90%;
+  margin: 6px auto 16px auto;
+  padding-left: 22px;
 }
 
 #tagsProducto li {
   list-style: disc;
   margin: 4px 0;
+  margin-top: 12px;
 }
 
 #reviews-container {
@@ -336,11 +344,11 @@ p.tituloCard {
 
 .login-form a {
   color: black;
-  text-decoration: none;   
+  text-decoration: none;
 }
 
 .login-form a:hover {
-  text-decoration: underline; 
+  text-decoration: underline;
   font-weight: bold;
 }
 
@@ -385,9 +393,8 @@ p.tituloCard {
   margin-top: 12px;
 }
 
-.login-page .menuLateral,
-.register-page .menuLateral {
-  display: none;
+.detalle-wrapper {
+  flex: 1;
 }
 
 @media (max-width: 768px) {
