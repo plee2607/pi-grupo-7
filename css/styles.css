@@ -146,6 +146,7 @@ main {
 .titulos {
   width: 100%;
   margin-bottom: 15px;
+  margin-top: 10px;
   background-color: #D9BFA9;
   padding: 10px;
   border-radius: 10px;
