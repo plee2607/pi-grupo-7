@@ -14,10 +14,12 @@ fetch(URL)
         contenido = contenido + `
             <article class="card">
                 <img src="${producto.images[0]}" alt="${producto.title}">
-                <p><strong>${producto.title}</strong></p>
+                <p class="tituloCard"><strong>${producto.title}</strong></p>
                 <p>${producto.description}</p>
-                <p>Precio: $${producto.price}</p>
-                <a href="product.html?id=${producto.id}" class="boton">Ver detalle</a>
+                <div class="card-footer">
+                  <p class="precioCard">Precio: $${producto.price}</p>
+                  <a href="product.html?id=${producto.id}" class="boton">Ver detalle</a>
+                </div>
             </article>
         `
     }
@@ -43,10 +45,12 @@ fetch(URL2)
       contenido = contenido + `
         <article class="card">
           <img src="${producto.images[0]}" alt="${producto.title}">
-          <p><strong>${producto.title}</strong></p>
+          <p class="tituloCard"><strong>${producto.title}</strong></p>
           <p>${producto.description}</p>
-          <p>Precio: $${producto.price}</p>
-          <a href="product.html?id=${producto.id}" class="boton">Ver detalle</a>
+          <div class="card-footer">
+            <p class="precioCard">Precio: $${producto.price}</p>
+            <a href="product.html?id=${producto.id}" class="boton">Ver detalle</a>
+          </div>
         </article>
       `
     }

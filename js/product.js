@@ -57,7 +57,7 @@ fetch(url)
     stock.innerText = data.stock;
 
     categoriaLink.innerText = data.category;
-    categoriaLink.href = "category.html?cat=" + data.category;
+    categoriaLink.href = "category.html?categoria=" + data.category;
 
     let contenidoTags = "";
     let limite = 3;

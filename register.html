@@ -8,9 +8,13 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body>
+<body class="register-page">
     <header>
-        <a href="index.html"><img src="./img/logoSinFondo.png" alt="Logo KIVO" class="logo"></a>
+        <div class="logo-link">
+            <a href="index.html">
+                <img src="./img/logoSinFondo.png" alt="Logo KIVO" class="logo">
+            </a>
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -31,7 +35,7 @@
         </aside>
         <section class="login-container">
             <form id="formRegister" action="login.html" method="get" class="login-form">
-                <h2>Resgístrate</h2>
+                <h2>Regístrate</h2>
 
                 <label class="log_label" for="email">Email:</label>
                 <input id="email" class="input_form" type="email" name="email" placeholder="Introduce un email">
@@ -43,8 +47,8 @@
                 <input id="password2" class="input_form" type="password" name="repeat_password" placeholder="Repite la contraseña">
 
                 <div class="checkbox">
-                    <label class="terminos" for="terminos">Acepto términos y condiciones</label>
                     <input id="tyc" type="checkbox" name="terminos_y_condiciones" value="terminos_y_condiciones">
+                    <label class="terminos" for="terminos">Acepto términos y condiciones</label>
                 </div>
 
                 <button type="submit">Registrarme</button>

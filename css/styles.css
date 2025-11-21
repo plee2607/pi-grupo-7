@@ -8,6 +8,9 @@
 body {
   background: #f9f9f9e9;
   color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
@@ -19,6 +22,18 @@ header {
   text-transform: uppercase;
 }
 
+.logo-link {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
 .logo {
   width: 120px;
   height: 120px;
@@ -27,44 +42,56 @@ header {
 nav ul {
   list-style: none;
   display: flex;
+  justify-content: center;
 }
 
 nav ul li {
-  margin-right: 20px;
+  margin: 0 30px;
 }
 
 nav a {
   color: black;
   text-decoration: none;
   font-weight: bold;
+  font-size: 18px;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #7B6048;
+  font-weight: bold;
 }
 
 header form {
-  width: 25%;
+  width: auto;
   display: flex;
+  justify-content: flex-end;
+  flex: 1;
 }
 
 header form input {
-  flex: 1;
-  border-radius: 4px;
-  border: none;
-  padding: 6px;
+  width: 220px;               
+  border-radius: 999px;        
+  border: 1px solid #7B6048;
+  padding: 8px 14px;
+  margin-right: 8px;
+  font-size: 14px;
+  background-color: #fff;
+  box-shadow: 0 0 4px rgba(0,0,0,0.08);
 }
 
 header form button {
-  padding: 6px 10px;
-  border-radius: 4px;
-  border: solid 1px #333;
-  background: #fff;
+  padding: 8px 16px;
+  border-radius: 999px;        
+  border: none;
+  background-color: #7B6048;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
   cursor: pointer;
 }
 
 header form button:hover {
-  background: #ddd;
+  background-color: #6A523D; 
 }
 
 footer {
@@ -82,6 +109,8 @@ footer {
   padding: 15px;
   border-radius: 10px;
   margin-right: 20px;
+  height: auto;          
+  align-self: flex-start; 
 }
 
 .menuLateral h3 {
@@ -110,6 +139,8 @@ footer {
 main {
   display: flex;
   padding: 20px;
+  flex: 1;
+  align-items: flex-start; 
 }
 
 .titulos {
@@ -135,17 +166,21 @@ main {
   padding: 15px;
   margin: 1%;
   transition: 0.2s;
+  display: flex;           
+  flex-direction: column;    
 }
 
-.producto:hover,
-.card:hover {
-  transform: scale(1.02);
+.card {
+  text-align: center;
 }
 
 .producto img,
 .card img {
-  width: 100%;
-  max-height: 200px;
+  display: block;     
+  margin: 0 auto;      
+  max-width: 100%;   
+  height: auto;       
+  max-height: 250px; 
   border-radius: 6px;
   margin-bottom: 10px;
   background-color: white;
@@ -157,4 +192,239 @@ main {
   text-align: center;
   font-size: 14px;
   margin-bottom: 8px;
+}
+
+.producto .btn,
+.card .boton {
+  display: block;
+  width: 80%;
+  margin: 10px auto 0;
+  text-align: center;
+  padding: 8px;
+  background: #e8cdb5;
+  color: black;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.producto .btn:hover,
+.card .boton:hover {
+  font-weight: bold;
+  background-color: #c0a893;
+}
+
+.precioCard {
+  border-bottom: 2px solid #c0a893;
+  display: inline-block;
+  padding-bottom: 4px;
+  margin-top: 12px;
+  color: #333;
+}
+
+p.precioCard {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.card-footer {
+  margin-top: auto;          
+}
+
+p.tituloCard {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+.detalle {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 25px;
+  margin-right: 20px;
+}
+
+.detalle h1 {
+  text-align: center;
+  margin: 0 auto 25px;
+  padding: 18px 25px;
+  background-color: #D9BFA9;
+  border-radius: 12px;
+  max-width: 90%;
+  font-size: 32px;
+}
+
+.detalle-info-text {
+  max-width: 90%;
+  margin: -10px auto 20px auto;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.tags-list {
+  max-width: 90%;
+  margin: -10px auto 20px auto;
+  padding-left: 25px;
+}
+
+.tags-list li {
+  margin: 4px 0;
+  font-size: 15px;
+}
+
+.imagenDetalle {
+  max-width: 350px;
+  max-height: 350px;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+}
+
+#tagsProducto {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+#tagsProducto li {
+  list-style: disc;
+  margin: 4px 0;
+}
+
+#reviews-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.review-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.login-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.login-form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #7B6048;
+}
+
+.log_label {
+  margin-bottom: 5px;
+  display: block;
+  font-weight: bold;
+}
+
+.login-form a {
+  color: black;
+  text-decoration: none;   
+}
+
+.login-form a:hover {
+  text-decoration: underline; 
+  font-weight: bold;
+}
+
+.input_form {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.terminos {
+  font-size: 12px;
+  color: #555;
+  margin-left: 1.5%;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #7B6048;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #6A523D;
+}
+
+.login-form p {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.login-page .menuLateral,
+.register-page .menuLateral {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header form {
+    width: 100%;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .menuLateral {
+    width: 100%;
+    text-align: center;
+  }
+
+  .producto,
+  .card {
+    width: 90%;
+  }
+
+  .imagenDetalle {
+    width: 90%;
+    height: auto;
+  }
+
+  .login-form {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
